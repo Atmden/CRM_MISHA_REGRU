@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,iFAAsE;AACtE,sEAA2D;AAC3D,mEAAwD;AACxD,8DAAmD;AACnD,uFAA4E;AAC5E,4EAAiE;AACjE,sEAA2D;AAC3D,uEAA4D;AAC5D,yDAA8C",
+"sources": ["vue.sass"],
+"names": [],
+"file": "vue.css"
+}

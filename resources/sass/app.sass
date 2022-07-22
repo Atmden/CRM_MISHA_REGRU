@@ -1,0 +1,1113 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap')
+
+
+
+
+// Variables
+// Body
+$body-bg: #F6F8FA
+
+// Typography
+$line-height-base: 1.6
+
+// Colors
+$blue: #487BF0
+$indigo: #354770
+$gray: #B5BED1
+$gray2: #DBE0EB
+$gray3: #F6F8FA
+$green: #0BC254
+$red: #DA4040
+$radius: 10px
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap'
+@import "../libs/css/icon"
+
+
+::placeholder
+  color: #666
+::selection
+  color: #fff
+  background-color: $indigo !important
+body
+  font-size: 16px !important
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  overflow-x: hidden
+  background: $body-bg
+  color: $indigo
+  font-family: 'Open Sans', sans-serif !important
+  letter-spacing: normal !important
+input, textarea
+  border: #666 1px solid
+  outline: none
+button
+  cursor: pointer
+  border: none
+  transition: all .3s
+  &:focus
+    outline: none !important
+.text-center
+  text-align: center
+h1,h2,h3,h4, b, strong
+  font-weight: normal
+a
+  transition: all .3s
+  &:hover
+    text-decoration: none !important
+  &:focus
+    outline: none !important
+ul,li
+  margin: 0
+  padding: 0
+  list-style-type: none
+.clearfix
+  &:after
+    display: block
+    content: ""
+    clear: both
+#app
+  min-height: 100vh
+header.not-auth-panel
+  background-color: $indigo
+  color: #fff
+  padding: 18px 0
+.logo-box
+  font-weight: 800
+  display: flex
+  align-items: center
+  font-size: 18px
+  i.icon-social-media
+    font-size: 40px
+    color: $blue
+    margin-right: 15px
+    &:before
+      margin: 0
+.md-button.btn
+  -webkit-border-radius: 6px !important
+  -moz-border-radius: 6px !important
+  border-radius: 6px !important
+  display: inline-block !important
+  color: #fff !important
+  font-weight: 700 !important
+  min-width: 150px !important
+  height: 42px !important
+  text-transform: none !important
+  margin: 0 !important
+  .md-button-content
+    font-size: 14px !important
+
+.md-button.btn-blue
+  background-color: $blue !important
+.md-field
+  margin: 0 0 20px 0 !important
+  padding: 0 !important
+  display: block !important
+  label
+    position: relative !important
+    top: auto !important
+    left: auto !important
+    font-size: 12px !important
+    color: $gray !important
+    font-weight: 600 !important
+    line-height: 1.6 !important
+    margin-bottom: 10px !important
+    margin-top: 0 !important
+    display: block !important
+  .md-input,
+  .md-textarea
+    border: 1px solid $gray2 !important
+    -webkit-border-radius: 6px !important
+    -moz-border-radius: 6px !important
+    border-radius: 6px !important
+    font-size: 14px !important
+    width: 100% !important
+    -webkit-transition: all .3s !important
+    -moz-transition: all .3s !important
+    -ms-transition: all .3s !important
+    -o-transition: all .3s !important
+    transition: all .3s !important
+    line-height: 1.6 !important
+  .md-input
+    height: 46px !important
+    text-indent: 15px
+  &:after
+    display: none !important
+  &:before
+    display: none !important
+    border: 1px solid green
+  .md-error
+    bottom: auto !important
+    position: relative !important
+    background-color: $red
+    color: #fff !important
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    padding: 1px 10px
+    display: none !important
+    height: 0 !important
+    margin-top: 5px !important
+    font-size: 11px !important
+  .md-input-action
+    width: 14px !important
+    min-width: 14px !important
+    height: 14px !important
+    top: 45px !important
+    right: 15px !important
+    .md-icon
+      width: 14px !important
+      min-width: 14px !important
+      height: 14px !important
+  .md-button
+    .md-ripple
+      padding: 0 !important
+  .md-field.md-has-password
+    .md-toggle-password
+      svg
+        width: 14px !important
+        height: 14px !important
+
+.md-field.md-focused
+  font-size: 12px !important
+  color: $gray2 !important
+  font-weight: 600 !important
+  display: block !important
+  .md-input,
+  .md-textarea
+    border: 1px solid $blue !important
+.md-field.md-invalid
+  .md-error
+    display: block !important
+    height: auto !important
+form.md-layout
+  display: block !important
+.md-menu.md-select
+  position: relative
+  .md-icon
+    position: absolute
+    right: 5px
+    top: 12px
+.md-select-menu
+  margin-top: 46px !important
+  margin-left: 20px !important
+.md-checkbox
+  font-size: 13px !important
+  margin: 0 !important
+  font-weight: 600
+  .md-checkbox-container
+    border: 1px solid $gray2 !important
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    &:after
+      width: 5px !important
+      height: 10px !important
+      top: 3px !important
+      left: 6px !important
+  .md-checkbox-label
+    padding-left: 10px !important
+    color: $gray !important
+.md-checkbox.md-checked
+  .md-checkbox-container
+    background-color: $blue !important
+    border-color: $blue !important
+  .md-checkbox-label
+    color: $indigo  !important
+
+.auth-page
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: calc(100vh - 76px)
+  padding:50px 15px
+
+.auth-form
+  background-color: #fff
+  border-radius: $radius
+  padding: 35px 45px
+  flex-basis: 405px
+  max-width: 405px
+  box-shadow: 0px 1px 25px rgba(219, 224, 235, 0.3)
+  h3
+    font-size: 24px
+    text-align: center
+    font-weight: 700
+    margin-bottom: 20px
+  .ftr
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 30px
+    a
+      font-size: 13px
+      color: $gray !important
+      &:hover
+        color: $blue !important
+
+.body-wrapper
+  min-height: 100vh
+  display: flex
+  .sticky-left-menu
+    background-color: #fff
+    box-shadow: 15px 0px 45px rgba(219, 224, 235, 0.3)
+    border-radius: 0 36px 0 0
+  .sticky-left-menu.active
+    background-color: $indigo
+  .left-menu
+    flex-basis: 300px
+    width: 300px
+    flex-shrink: 0
+    position: sticky
+    top: 0
+    background-color: #fff
+    -webkit-border-radius: 0 36px 0 0
+    -moz-border-radius: 0 36px 0 0
+    border-radius: 0 36px 0 0
+  .header
+    background-color: $indigo
+    padding: 15px 30px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #fff
+    -webkit-border-radius: 0 36px 0 0
+    -moz-border-radius: 0 36px 0 0
+    border-radius: 0 36px 0 0
+    .btn-open-panel
+      font-size: 30px
+      color: rgba(255,255,255,.15)
+      background-color: transparent
+      i
+        &:before
+          margin: 0
+      &:hover
+        color: #fff
+  .user-info-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 15px 20px 30px
+    border-bottom: 1px solid $gray2
+    margin-bottom: 30px
+    .wr
+      display: flex
+      align-items: center
+    .image
+      width: 40px
+      height: 40px
+      display: inline-block
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      margin-right: 15px
+      position: relative
+      background-color: $gray
+      overflow: hidden
+      img
+        top: 50%
+        left: 50%
+        position: absolute
+        -webkit-transform: translate(-50%, -50%)
+        -moz-transform: translate(-50%, -50%)
+        -ms-transform: translate(-50%, -50%)
+        -o-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+    .name
+      font-size: 14px
+      a
+        color: $indigo
+        &:hover
+          color: $blue
+    .email
+      font-size: 12px
+      color: $gray
+    .btn-exit
+      background-color: transparent
+      color: $gray2
+      font-size: 24px
+      &:hover
+        color: $blue
+  .left-menu.active
+    background-color: $indigo
+    flex-basis: 75px
+    width: 75px
+    box-shadow: none
+    .logo-box
+      display: none
+    .header
+      padding: 0
+      -webkit-border-radius: 0 0 0 0
+      -moz-border-radius: 0 0 0 0
+      border-radius: 0 0 0 0
+      .btn-open-panel
+        width: 85px
+        height: 60px
+        color: #fff
+        background-color: #253A6A
+    .user-info-box
+      border: none
+      padding: 20px 15px
+      display: block
+      text-align: center
+      .wr
+        justify-content: center
+        display: flex
+        .image
+          margin-bottom: 15px
+          margin-right: 0
+        .info
+          display: none
+    nav
+      ul
+        li
+          a, span
+            font-size: 0
+            padding: 20px 0
+            justify-content: center
+            i
+              margin-right: 0
+              -webkit-transition: all .3s
+              -moz-transition: all .3s
+              -ms-transition: all .3s
+              -o-transition: all .3s
+              transition: all .3s
+          a
+            &:hover
+              i
+                color: #fff !important
+  .content-part
+    flex-basis: 100%
+    max-width: 100%
+    margin-left: 20px
+    padding-right: 15px
+    padding-top: 15px
+    .sticky
+      top: 15px
+.acc-list-page
+  .item
+    background-color: #fff
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 15px 30px
+    box-shadow: 0px 1px 25px rgba(219, 224, 235, 0.3)
+    margin-bottom: 20px
+    border-radius: $radius
+    .title
+      font-size: 18px
+      font-weight: 700
+      margin-bottom: 5px
+      a
+        color: $indigo
+        &:hover
+          color: $blue
+    .status
+      display: inline-flex
+      align-items: center
+      color: $gray
+      font-size: 12px
+      position: relative
+      margin-right: 20px
+      &:before
+        content: ''
+        width: 10px
+        height: 10px
+        flex-shrink: 0
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        margin-right: 10px
+    .status.status-active
+      &:before
+        content: ''
+        background-color: $green
+    .status.status-unactive
+      &:before
+        content: ''
+        background-color: #B5BED1
+    .users-count
+      font-size: 12px
+      color: $gray
+      display: inline-block
+nav
+  font-size: 15px
+  ul
+    li
+      a, span
+        display: flex
+        align-items: center
+        padding: 15px 30px
+        color: $indigo
+        i
+          margin-right: 15px
+          font-size: 24px
+          color: $gray
+      a
+        color: $gray !important
+        &:hover
+          color: $blue !important
+    li.active
+      a, span
+        border-left: 3px solid blue
+        background-color: $gray3
+        color: $indigo
+        i
+          color: $blue
+.top-panel
+  padding: 15px
+  border-radius: $radius
+  background-color: #fff
+  box-shadow: 0 10px 25px rgba(219, 224, 235, 0.7)
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  justify-content: flex-end
+  form.md-layout
+    width: 100%
+    display: flex !important
+  .btn.btn-add-new-user
+    height: 46px !important
+    min-width: 205px !important
+.btn-edit-user
+  min-width: auto
+  width: 55px
+  height: 42px
+  background-color: $gray3
+  font-size: 22px
+  -webkit-border-radius: 6px
+  -moz-border-radius: 6px
+  border-radius: 6px
+  i
+    color: $gray
+  &:hover
+    background-color: $blue
+    i
+      color: #fff
+
+
+.md-dialog-container
+  min-width: 950px
+  padding:35px 40px
+  overflow-y: scroll
+  color: $indigo !important
+  h2
+    font-size: 28px
+    line-height: 1.2
+    font-weight: 700
+    margin-bottom: 30px
+  h3
+    font-size: 20px
+    line-height: 1.2
+    font-weight: 700
+    margin-bottom: 20px
+
+.search-form
+  margin-right: 20px
+  .md-field
+    display: flex !important
+    align-items: center
+    margin-bottom: 0 !important
+  .btn-search
+    margin: 0
+    min-width: auto !important
+    width: 50px
+    height: 46px !important
+    margin-left: 10px !important
+.md-overlay
+  background: rgba(53, 71, 112, .7) !important
+  z-index: 10 !important
+.form-user-edit
+
+  .item-title-acc
+    display: flex
+    align-items: center
+    .md-field
+      display: flex !important
+      flex-wrap: wrap
+      label
+        flex-basis: 100%
+    .md-checkbox
+      margin-left: 30px !important
+      margin-top: 14px !important
+  .soc-service-list
+    padding: 30px 0
+    .item-service
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+      .md-field
+        margin-bottom: 0 !important
+        margin-right: 30px !important
+      h4
+        font-size: 14px
+        margin-bottom: 0
+        font-weight: 500
+        width: 160px
+        flex-basis: 160px
+        flex-shrink: 0
+        display: flex
+        align-items: center
+        img
+          margin-right: 5px
+      .md-input
+        margin-right: 30px
+  .user-list
+    margin-top: 30px
+    .btn-add-new-user
+      margin-top: 25px !important
+    h3
+      margin-bottom: 10px
+    .item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 5px 0
+      border-bottom: 1px solid $gray2
+      .title
+        font-weight: 700
+
+
+.checkbox-pub
+  .md-checkbox-label
+    font-weight: 500
+    b
+      font-weight: 700
+.md-dialog-actions
+  .btn-cancel
+    border: 1px solid $gray2
+    margin-right: 15px !important
+    .md-button-content
+      color: $gray
+    &:hover
+      background-color: $red
+      border: 1px solid $red
+      .md-button-content
+        color: #fff
+.filter-block
+  background-color: #fff
+  padding: 20px 15px
+  flex-basis: 230px
+  width: 230px
+  flex-shrink: 0
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  z-index: 999
+  visibility: hidden
+  opacity: 0
+  transition: all .5s
+  margin-left: -230px
+  box-shadow: 5px 0px 15px rgba(219, 224, 235, 0.7)
+
+  .sticky
+    top: 25px
+  h3
+    font-weight: 700
+    font-size: 11px
+    text-transform: uppercase
+    margin-bottom: 30px
+  .filter-item
+    margin-bottom: 40px
+    position: relative
+    .md-checkbox
+      display: flex !important
+    h4
+      color: $blue
+      font-size: 10px
+      font-weight: 700
+      margin-bottom: 15px
+      text-transform: uppercase
+.btn-close-filter
+  width: 30px
+  height: 30px
+  -webkit-border-radius: 6px
+  -moz-border-radius: 6px
+  border-radius: 6px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 8px
+  border: 1px solid $gray2
+  position: absolute
+  top: 7px
+  background-color: #fff
+  right: 7px
+  color: $gray2
+  z-index: 10
+.filter-block.active
+  visibility: visible
+  opacity: 1
+  margin-left: 0
+.vs__dropdown-toggle
+  padding: 6px 0 !important
+  min-height: 42px
+  border: 1px solid $gray2 !important
+.vs__selected-options
+  overflow: hidden !important
+  margin-right: 25px !important
+  width: 134px !important
+  flex-basis: 134px !important
+.vs__selected
+  font-size: 14px !important
+  white-space: nowrap
+  margin: 0 !important
+.vs__search
+  display: none
+.vs__actions
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  .vs__clear
+    margin-right: 4px
+    position: relative
+    top: -2px
+.vs__dropdown-menu
+  font-size: 14px !important
+  padding: 0px !important
+  z-index: 5 !important
+  li
+    padding-left: 10px !important
+    padding-right: 10px !important
+    &:hover
+      background-color: $indigo !important
+h1.title
+  font-size: 36px
+  line-height: 1.2
+  font-weight: 700
+  margin-top: 35px
+  margin-bottom: 25px
+.nav
+  display: flex
+  background-color: $indigo
+  color: #fff
+  -webkit-border-radius: 10px 0 0 10px
+  -moz-border-radius: 10px 0 0 10px
+  border-radius: 10px 0 0 10px
+  margin-right: 30px
+  position: relative
+  z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    display: inline-block
+    z-index: -1
+    top: -15px
+    left: -15px
+    bottom: -15px
+    right: -15px
+    background-color: $indigo
+    -webkit-border-radius: 10px 0 0 10px
+    -moz-border-radius: 10px 0 0 10px
+    border-radius: 10px 0 0 10px
+  ul
+    display: flex
+    li
+      a
+        color: $gray2 !important
+        display: block
+        padding: 12px 16px
+        white-space: nowrap
+        font-size: 14px
+        text-transform: uppercase
+        font-weight: 700
+        i
+          font-size: 16px
+          &:before
+            margin: 0
+        &:hover
+          color: #fff !important
+  .notifications
+    display: inline-block
+    position: relative
+    margin-right: 10px
+    b
+      position: absolute
+      top: -2px
+      right: -10px
+      background-color: $green
+      width: 16px
+      height: 16px
+      font-size: 10px
+      font-weight: 700
+      text-align: center
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+
+.post-block
+  background-color: #fff
+  padding: 25px
+  padding-bottom: 5px
+  margin-bottom: 20px
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+  box-shadow: 0px 1px 25px rgba(219, 224, 235, 0.3)
+  .post-date
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 700
+    padding-bottom: 15px
+    margin-bottom: 25px
+    border-bottom: 1px solid $gray2
+  .post-item
+    display: flex
+    justify-content: space-between
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+    padding: 20px
+    border: 1px solid $gray2
+    margin-bottom: 20px
+    font-size: 14px
+    &:hover
+      .nav-panel
+        .btn
+          opacity: 1
+    .image
+      flex-basis: 275px
+      width: 275px
+      flex-shrink: 0
+    .desc
+      padding-left: 20px
+      padding-right: 20px
+      flex-basis: 100%
+    .nav-panel
+      flex-basis: 160px
+      width: 160px
+      flex-shrink: 0
+      .btn
+        width: 100% !important
+        margin-bottom: 10px !important
+        opacity: 0
+        transition: all .3s
+      .status
+        -webkit-border-radius: 6px
+        -moz-border-radius: 6px
+        border-radius: 6px
+        font-size: 10px
+        text-transform: uppercase
+        font-weight: 700
+        color: #fff
+        background-color: $gray
+        text-align: center
+        padding: 7px 10px 8px
+        margin-bottom: 10px
+      .status.status-green
+        background-color: $green
+
+    .info-panel
+      background-color: $gray3
+      -webkit-border-radius: 6px
+      -moz-border-radius: 6px
+      border-radius: 6px
+      font-size: 13px
+      padding: 5px 10px
+      margin-bottom: 15px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .left
+        color: $indigo
+        display: flex
+        > div
+          margin-right: 20px
+        i
+          color: $gray
+      .right
+        color: $gray
+        display: flex
+        align-items: center
+        > div
+          margin-left: 10px
+        .icon-checked
+          color: $green
+        .icon-attention-sign
+          color: #f2170d
+.sticky
+  position: sticky
+  top: 0
+  z-index: 7
+.md-tooltip
+  font-size: 14px
+  padding: 3px 10px
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  height: auto
+
+.form-post-edit
+  .md-date-icon
+    display: none
+  .md-field>.md-icon~.md-file,
+  .md-field>.md-icon~.md-input,
+  .md-field>.md-icon~.md-textarea
+    margin-left: 0
+  .md-checkbox
+    margin-right: 15px !important
+
+.time-pub-input
+  background: #fff url(../img/icon/clock2.svg) no-repeat left 10px center !important
+.title-post-input
+  background: #fff url(../img/icon/title.svg) no-repeat left 10px center !important
+.date-input.md-field
+  .md-input-action
+    top: 50% !important
+    -webkit-transform: translate(0, -50%)
+    -moz-transform: translate(0, -50%)
+    -ms-transform: translate(0, -50%)
+    -o-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+  input
+    background: #fff url(../img/icon/calendar3.svg) no-repeat left 10px center !important
+.hashtag-input
+  background: #fff url(../img/icon/hashtag.svg) no-repeat left 10px center !important
+
+.time-pub-input,
+.title-post-input,
+.date-input input,
+.hashtag-input
+  text-indent: 40px !important
+
+.user-profile-page
+  .wrapper
+    display: flex
+    .profile-info-part
+      background-color: #fff
+      flex-basis: 70%
+      -webkit-border-radius: $radius
+      -moz-border-radius: $radius
+      border-radius: $radius
+      padding: 45px
+      box-shadow: 0 10px 25px rgba(219, 224, 235, 0.7)
+    .accounts-notifications-check
+      background-color: #fff
+      flex-basis: 30%
+      margin-left: 20px
+      -webkit-border-radius: $radius
+      -moz-border-radius: $radius
+      border-radius: $radius
+      padding: 45px
+      box-shadow: 0 10px 25px rgba(219, 224, 235, 0.7)
+      h3
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 30px
+      .md-checkbox
+        display: flex !important
+  .profile-info
+    display: flex
+    align-items: center
+    .image
+      width: 148px
+      height: 148px
+      flex-basis: 148px
+      flex-shrink: 0
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      position: relative
+      background-color: $gray2
+      overflow: hidden
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        -webkit-transform: translate(-50%, -50%)
+        -moz-transform: translate(-50%, -50%)
+        -ms-transform: translate(-50%, -50%)
+        -o-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+    .desc
+      padding-left: 30px
+      .md-field
+        margin-bottom: 0 !important
+        min-height: auto !important
+      .title
+        padding-bottom: 10px
+        margin-bottom: 10px
+        border-bottom: 1px solid $gray2
+        .name
+          font-size: 24px
+          line-height: 1.2
+          font-weight: 700
+        .email
+          color: $gray
+      b
+        font-weight: 700
+  .change-password
+    margin-top: 50px
+    max-width: 320px
+    h3
+      font-size: 20px
+      line-height: 1.2
+      font-weight: 700
+.md-button.btn.btn-filter
+  margin-bottom: 30px !important
+.wrapper-div
+  flex-basis: 100%
+  display: flex
+.ti-tag
+  background-color: $blue !important
+  -webkit-border-radius: 3px !important
+  -moz-border-radius: 3px !important
+  border-radius: 3px !important
+
+.ti-input
+  border: 1px solid #DBE0EB !important
+  border-radius: 6px !important
+  font-size: 14px !important
+  width: 100% !important
+  transition: all 0.3s !important
+  min-height: 46px
+  padding-left: 50px
+  background: #fff url(../img/icon/hashtag.svg) no-repeat left 10px center !important
+.ti-tags
+  margin-left: 30px !important
+.vue__time-picker
+  input.display-time
+    height: 46px
+    border: 1px solid #DBE0EB !important
+    border-radius: 6px !important
+    font-size: 14px !important
+  .controls
+    right: 25px
+.multiselect__single
+  font-size: 14px !important
+
+.tox
+  -webkit-border-radius: 6px !important
+  -moz-border-radius: 6px !important
+  border-radius: 6px !important
+  .tox-menubar
+    border-bottom: 1px solid #DBE0EB !important
+    background: none !important
+  .tox-statusbar
+    border-top: 1px solid #DBE0EB !important
+  .tox-toolbar
+    border-bottom: 1px solid #DBE0EB !important
+  .tox-toolbar,
+  .tox-toolbar__overflow,
+  .tox-toolbar__primary
+    background: none !important
+.tox:not([dir=rtl])
+  .tox-toolbar__group:not(:last-of-type)
+    border-right: 1px solid #DBE0EB !important
+.tox-tinymce
+  border: 1px solid #DBE0EB !important
+.filter-item.user-info-box
+  .md-datepicker
+    position: relative
+    i
+      display: none !important
+    .md-input
+      margin-left: 0 !important
+.md-datepicker-dialog
+  z-index: 999
+.mx-input
+  height: 46px
+  border: 1px solid #e8e8e8
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  box-shadow: none
+.mx-icon-calendar,
+.mx-icon-clear
+  right: 15px
+.mx-datepicker
+  width: 100%
+.multiselect__tags
+  min-height: 46px
+.multiselect__input,
+.multiselect__single
+  line-height: 26px
+.multiselect__select
+  height: 43px
+@media screen and (max-width: 1200px)
+  .user-profile-page
+    .wrapper
+      flex-wrap: wrap
+      .accounts-notifications-check
+        margin-left: 0
+        margin-top: 20px
+        flex-basis: 100%
+      .profile-info-part
+       flex-basis: 100%
+.multiselect__element
+  font-size: 12px
+@media screen and (max-width: 992px)
+  .md-dialog-container
+    padding: 15px
+    min-width: auto !important
+  .md-dialog-fullscreen
+    height: auto !important
+  .post-block
+    .post-item
+      flex-wrap: wrap
+      position: relative
+      .image
+        flex-basis: 100%
+        margin-bottom: 15px
+      .desc
+        padding-left: 0
+        padding-right: 0
+      .nav-panel
+        display: flex
+        flex-basis: 100%
+        width: 100%
+        justify-content: space-between
+        .status
+          position: absolute
+          top: 0
+          right: 0
+          -webkit-border-radius: 0 6px 0 6px
+          -moz-border-radius: 0 6px 0 6px
+          border-radius: 0 6px 0 6px
+        .btn
+          margin-right: 15px !important
+          opacity: 1 !important
+          &:last-child
+            margin-right: 0 !important
+            margin-left: 15px !important
+  .user-profile-page
+    .wrapper
+      .profile-info-part
+        padding: 25px 15px
+        .profile-info
+          display: block
+          .desc
+            padding-left: 0
+            margin-top: 15px
+      .accounts-notifications-check
+        padding: 25px 15px
+        h3
+          font-size: 18px
+  h1.title
+    font-size: 26px
+    margin-top: 0
+@media screen and (max-width: 768px)
+  .top-panel
+    flex-wrap: wrap
+    .search-form
+      margin-right: 0
+      margin-bottom: 10px
+@media screen and (max-width: 576px)
+  .acc-list-page
+    .item
+      padding: 15px 20px
+      .title
+        font-size: 14px
+  .auth-form
+    .ftr
+      flex-wrap: wrap
+      justify-content: center
+      .btn
+        flex-basis: 100%
+        margin-top: 12px !important
+        margin-bottom: 15px !important
